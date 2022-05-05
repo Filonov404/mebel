@@ -11,6 +11,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
 </head>
 <body>
 <header class="header">
@@ -72,203 +73,136 @@
 </header>
 <main class="main">
     <div class="container">
-        <h1 class="title">Блог</h1>
+        <h2 class="title">О продукте</h2>
         <div class="breadcrumbs">
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
                     <a href="#" class="breadcrumbs-link">Главная /</a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a href="#" class="breadcrumbs-link">Блог</a>
+                    <a href="#" class="breadcrumbs-link">О продукте</a>
                 </li>
             </ul>
         </div>
     </div>
 </main>
 
-<section class="blog">
+<section class="product">
     <div class="container">
-        <div class="blog-wrapper">
-            <div class="blog-content">
-                <div class="blog-content-wrap">
-                    <div class="blog-content-inner">
-                        <img src="images/blog/dizayn-interera-kvartiry-mosfilmovskiy.jpg"
-                             alt="dizayn-interera-kvartiry" class="blog-img">
-                        <div class="admin-info">
-                            <div class="date-info"> 28 JANUARY, 2022</div>
-                            <div class="user-info"> BY ADMIN</div>
-                        </div>
-                    </div>
-                    <span class="blog-title">Fonsectetur adipisicing  eiusmod </span>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A accusantium adipisci alias consequatur cum deserunt enim eum explicabo ipsam
-                        iste labore praesentium quam reprehenderit repudiandae ullam ut, vero. Dolore
-                        dolorum impedit placeat?
-                        Ab corporis cumque eligendi facilis inventore ipsum voluptas!</p>
-                    <button class="view-more">View more</button>
+        <div class="product-slider">
+            <div class="slider-thumbs">
+                <div class="thumbs-item">
+                    <img src="images/product/1.jpg" alt="slider" class="thumbs-items">
                 </div>
-                <div class="blog-content-wrap">
-                    <div class="blog-content-inner">
-                        <img src="images/blog/kvartira-v-new-yorke-vdohnovlennaya.jpg"
-                             alt="dizayn-interera-kvartiry" class="blog-img">
-                        <div class="admin-info">
-                            <div class="date-info"> 28 JANUARY, 2022</div>
-                            <div class="user-info"> BY ADMIN</div>
-                        </div>
-                    </div>
-                    <span class="blog-title">Fonsectetur adipisicing  eiusmod </span>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A accusantium adipisci alias consequatur cum deserunt enim eum explicabo ipsam
-                        iste labore praesentium quam reprehenderit repudiandae ullam ut, vero. Dolore
-                        dolorum impedit placeat?
-                        Ab corporis cumque eligendi facilis inventore ipsum voluptas!</p>
-                    <button class="view-more">View more</button>
+                <div class="thumbs-item">
+                    <img src="images/product/1.jpg" alt="slider" class="thumbs-items">
                 </div>
-                <div class="blog-content-wrap">
-                    <div class="blog-content-inner">
-                        <img src="images/blog/krasivyi-divan.jpg"
-                             alt="dizayn-interera-kvartiry" class="blog-img">
-                        <div class="admin-info">
-                            <div class="date-info"> 28 JANUARY, 2022</div>
-                            <div class="user-info"> BY ADMIN</div>
-                        </div>
-                    </div>
-                    <span class="blog-title">Fonsectetur adipisicing  eiusmod </span>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A accusantium adipisci alias consequatur cum deserunt enim eum explicabo ipsam
-                        iste labore praesentium quam reprehenderit repudiandae ullam ut, vero. Dolore
-                        dolorum impedit placeat?
-                        Ab corporis cumque eligendi facilis inventore ipsum voluptas!</p>
-                    <button class="view-more">View more</button>
-                </div>
-                <div class="blog-content-wrap">
-                    <div class="blog-content-inner">
-                        <img src="images/blog/kuhnya_original.jpg"
-                             alt="dizayn-interera-kvartiry" class="blog-img">
-                        <div class="admin-info">
-                            <div class="date-info"> 28 JANUARY, 2022</div>
-                            <div class="user-info"> BY ADMIN</div>
-                        </div>
-                    </div>
-                    <span class="blog-title">Fonsectetur adipisicing  eiusmod </span>
-                    <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A accusantium adipisci alias consequatur cum deserunt enim eum explicabo ipsam
-                        iste labore praesentium quam reprehenderit repudiandae ullam ut, vero. Dolore
-                        dolorum impedit placeat?
-                        Ab corporis cumque eligendi facilis inventore ipsum voluptas!</p>
-                    <button class="view-more">View more</button>
+                <div class="thumbs-item">
+                    <img src="images/product/1.jpg" alt="slider" class="thumbs-items">
                 </div>
             </div>
-            <div class="blog-filter">
-                <label class="search-wrapper">
-                    <input class="search-filter" type="text">
-                    <button class="search-btn"></button>
-                </label>
-                <div class="categories-wrapper">
-                    <p class="filter-title">Категории</p>
-                    <ul class="category-list-items">
-                        <li class="category-list-item">
-                            <a href="#" class="category-link">Кресла</a>
-                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
-                        </li>
-                        <li class="category-list-item">
-                            <a href="#" class="category-link">Столы</a>
-                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
-                        </li>
-                        <li class="category-list-item">
-                            <a href="#" class="category-link">Лампы</a>
-                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
-                        </li>
-                        <li class="category-list-item">
-                            <a href="#" class="category-link">Часы</a>
-                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
-                        </li>
-                        <li class="category-list-item">
-                            <a href="#" class="category-link">Будильники</a>
-                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
-                        </li>
-                    </ul>
+            <div class="slider-main-items">
+                <img src="images/product/1.jpg" alt="slider" class="slider-main">
+            </div>
+            <div class="slider-description">
+                <h3 class="slider-title">Pendant lamp</h3>
+                <div class="star" data-rateyo-rating="4"></div>
+                <p class="slider-price">2000 р.</p>
+                <p class="slider-text">Настольная лампа с красивым абажуром может стать
+                    главным украшением интерьера. Какую модель лучше выбрать,
+                    что нужно учесть при поиске светильника? Какие разновидности декоративных
+                    настольных светильников встречаются в продаже.</p>
+                <div class="slider-count-wrapper">
+                    <div class="slider-counter">
+                        <button class="down">-</button>
+                        <p class="num">1</p>
+                        <button class="up">+</button>
+                    </div>
+                    <button class="count-submit" type="submit">Добавить в корзину</button>
                 </div>
-                <div class="recent-posts">
-                    <p class="filter-title">Последние посты</p>
-                    <div class="recent-products-wrapper">
-                        <div class="recent-products-inner">
-                            <img src="images/blog/recent2.jpg" alt="" class="recent-blog">
-                            <div class="recent-products-content">
-                                <h5 class="content-subtitle">Corem ipsum dolor tetur adipisicing elit</h5>
-                                <div class="date-info"> 28 JANUARY, 2022</div>
-                            </div>
+                <div class="model-item">
+                    <span class="descr">SKU: 014</span>
+                    <span class="descr"> Категория: Настольные лампы</span>
+                    <span class="descr">Теги: Декоративные</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-tabs">
+            <div class="top-btns">
+                <button class="tabs active">Описание</button>
+                <button class="tabs">Дополнительная информация</button>
+                <button class="tabs">Обзоры(2)</button>
+            </div>
+            <p class="slider-text-description">
+                Настольная лампа с красивым абажуром может стать
+                главным украшением интерьера. Какую модель лучше выбрать,
+                что нужно учесть при поиске светильника? Какие разновидности декоративных
+                настольных светильников встречаются в продаже
+            </p>
+        </div>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <div class="related-products">
+            <div class="related-products-wrapper">
+                <h3 class="title-related">Просмотренные товары</h3>
+                <div class="arrows-slider">
+                    <button class="left-arrow"></button>
+                    <button class="right-arrow"></button>
+                </div>
+            </div>
+            <div class="related-products-slider">
+                <div class="card-related">
+                    <img src="images/product/c35-1938x782.png" alt="кресло" class="related-img">
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="search-bnt">
+                            <img src="images/icons/icon.svg" alt="search" class="user-search-icon">
                         </div>
-                        <div class="recent-products-inner">
-                            <img src="images/blog/recent3.jpg" alt="" class="recent-blog">
-                            <div class="recent-products-content">
-                                <h5 class="content-subtitle">Corem ipsum dolor tetur adipisicing elit</h5>
-                                <div class="date-info"> 28 JANUARY, 2022</div>
-                            </div>
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="user-search-icon">
                         </div>
-                        <div class="recent-products-inner">
-                            <img src="images/blog/vidy-dizajna-interera.jpg" alt="" class="recent-blog">
-                            <div class="recent-products-content">
-                                <h5 class="content-subtitle">Corem ipsum dolor tetur adipisicing elit</h5>
-                                <div class="date-info"> 28 JANUARY, 2022</div>
-                            </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="user-search-icon">
                         </div>
-                        <div class="recent-products-inner">
-                            <img src="images/blog/recent4.jpg" alt="" class="recent-blog">
-                            <div class="recent-products-content">
-                                <h5 class="content-subtitle">Corem ipsum dolor tetur adipisicing elit</h5>
-                                <div class="date-info"> 28 JANUARY, 2022</div>
-                            </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <img src="images/product/c111-1938.png" alt="кресло" class="related-img">
+                    <p class="title-card-item">Деревянное кресло</p>
+                    <span class="price-card">15000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="search-bnt">
+                            <img src="images/icons/icon.svg" alt="search" class="user-search-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <img src="images/product/Garuda-1.png" alt="кресло" class="related-img">
+                    <p class="title-card-item">белое кресло</p>
+                    <span class="price-card">12000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="search-bnt">
+                            <img src="images/icons/icon.svg" alt="search" class="user-search-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <img src="images/product/Rixoschr.png" alt="кресло" class="related-img">
+                    <p class="title-card-item">Ретро кресло</p>
+                    <span class="price-card">8000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="search-bnt">
+                            <img src="images/icons/icon.svg" alt="search" class="user-search-icon">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
-
-<div class="container">
-    <div class="pagination">
-        <button class="pagination-btn-list active">1</button>
-        <button class="pagination-btn-list">2</button>
-        <button class="pagination-btn-list">Далее</button>
-    </div>
-</div>
-
-<div class="insights-bottom-small">
-    <div class="container">
-        <ul class="insights-list">
-            <li class="insights-item">
-                <a href="#" class="insights-link">
-                    <img src="images/about/partner.png" alt="" class="insights-link-img">
-                </a>
-            </li>
-            <li class="insights-item">
-                <a href="#" class="insights-link">
-                    <img src="images/about/KMN.png" alt="" class="insights-link-img">
-                </a>
-            </li>
-            <li class="insights-item">
-                <a href="#" class="insights-link">
-                    <img src="images/about/chain.png" alt="" class="insights-link-img">
-                </a>
-            </li>
-            <li class="insights-item">
-                <a href="#" class="insights-link">
-                    <img src="images/about/nextg3n.png" alt="" class="insights-link-img">
-                </a>
-            </li>
-            <li class="insights-item">
-                <a href="#" class="insights-link">
-                    <img src="images/about/vintage.png" alt="" class="insights-link-img">
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
@@ -404,6 +338,9 @@
 </footer>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/jquery.rateyo.min.js"></script>
+<script src="js/slick.min.js"></script>
+
 
 </body>
 </html>
