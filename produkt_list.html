@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Rubik:wght@400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo">
+                <img class="logo" src="images/icons/logo.svg" alt="logo">
+            </div>
+            <nav class="menu">
+                <ul class="menu-wrapper">
+                    <li class="menu-items">
+                        <a href="#" class="menu-link">Home +</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-link">About</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-link">Services</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-link">Pages +</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-link">News</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="options-user">
+                <div class="user-search">
+                    <a href="#" class="user-search-link">
+                        <img class="user-search-icon" src="images/icons/icon.svg" alt="search">
+                    </a>
+                </div>
+                <div class="user-container">
+                    <div class="user-heart">
+                        <a href="#" class="heart-link">
+                            <span class="heart-count">0</span>
+                            <img src="images/icons/heart.png" alt="" class="heart-img">
+                        </a>
+                    </div>
+                    <div class="user-cart">
+                        <span class="cart-count">0</span>
+                        <a href="#" class="cart-link">
+                            <img src="images/icons/cart.png" alt="" class="cart-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="user-nav">
+                    <a href="#" class="user-menu">
+                        <img src="images/icons/Group.svg" alt="user-nav-icon" class="nav-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <h1 class="title">Список товаров</h1>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link">Главная /</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link">Список товаров</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<section class="product-list">
+    <div class="container">
+        <div class="product-list-inner">
+            <div class="filter-wrapper">
+                <div class="category-list">
+                    <p class="filter-title">Категории</p>
+                    <ul class="category-list-items">
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Кресла</a>
+                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Столы</a>
+                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Лампы</a>
+                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Часы</a>
+                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Будильники</a>
+                            <img src="images/about/arrow-rigth.svg" alt="decor" class="decor-item">
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-range-price">
+                    <p class="filter-title">Цена</p>
+                    <div class="filter-range">
+                        <input type="text" class="js-range-slider" name="my_range" value=""/>
+                    </div>
+                </div>
+                <div class="brand">
+                    <p class="filter-title">Бренд</p>
+                    <ul class="category-list-items">
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">RFL</a>
+                            <span class="brand-count">(10)</span>
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Brothers</a>
+                            <span class="brand-count">(23)</span>
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Regal</a>
+                            <span class="brand-count">(13)</span>
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Nadia</a>
+                            <span class="brand-count">(12)</span>
+                        </li>
+                        <li class="category-list-item">
+                            <a href="#" class="category-link">Otobi</a>
+                            <span class="brand-count">(21)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recent-products">
+                    <p class="filter-title">Просмотренные товары</p>
+                    <div class="recent-products-wrapper">
+                        <div class="recent-products-inner">
+                            <img src="images/product/recent_1.jpg" alt="" class="recent-product">
+                            <div class="recent-products-content">
+                                <h5 class="content-subtitle">Декоративная лампа</h5>
+                                <div class="star" data-rateyo-rating="4"></div>
+                                <div class="recent-products-price">1000 p.</div>
+                            </div>
+                        </div>
+                        <div class="recent-products-inner">
+                            <img src="images/product/recent_2.jpg" alt="" class="recent-product">
+                            <div class="recent-products-content">
+                                <h5 class="content-subtitle">Декоративная лампа</h5>
+                                <div class="star" data-rateyo-rating="4"></div>
+                                <div class="recent-products-price">1000 p.</div>
+                            </div>
+                        </div>
+                        <div class="recent-products-inner">
+                            <img src="images/product/recent_3.jpg" alt="" class="recent-product">
+                            <div class="recent-products-content">
+                                <h5 class="content-subtitle">Декоративная лампа</h5>
+                                <div class="star-product" data-rateyo-rating="4"></div>
+                                <div class="recent-products-price">1000 p.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/slider-1.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt1.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt2.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt3.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt4.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt5.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt6.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt7.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/slider-3.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt6.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-related">
+                    <div class="card-img">
+                        <img src="images/product/produkt5.jpg" alt="кресло" class="related-img">
+                    </div>
+                    <p class="title-card-item">Деревянное радио</p>
+                    <span class="price-card">10000 p.</span>
+                    <div class="hidden-block-cart">
+                        <div class="cart-bnt">
+                            <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+                        </div>
+                        <div class="heart-bnt">
+                            <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="pagination">
+        <button class="pagination-btn-list active">1</button>
+        <button class="pagination-btn-list">2</button>
+        <button class="pagination-btn-list">Далее</button>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <a href="#" class="footer-link">
+                    <img src="images/icons/Logo.svg" alt="Logo" class="footer-logo">
+                </a>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Москва ул.Ленина д.10, оф.5.
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="tel:89001001010" class="footer-link">
+                            +79001001010
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="mailto:contact@Glee.com" class="footer-link">
+                            contact@Glee.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <p class="footer-title">Обслуживание</p>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Возврат
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Связаться с нами
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Условия и положения
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-account">
+                <p class="footer-title">Аккаунт</p>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Кабинет
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Проверить
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Вход
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <p class="footer-title">Новостная рассылка</p>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            Подпишитесь на наш блог
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-item" action="#">
+                    <input class="footer-input" placeholder="Ваш емайл" name="input" type="text">
+                    <input class="footer-btn" type="submit" name="button" value="Подписаться">
+                </form>
+            </div>
+        </div>
+        <div class="decor-border"></div>
+
+        <div class="footer-bottom">
+            <div class="footer-rights">
+                <span class="rights">©2022 CopyRight Example. Все права защищены. </span>
+            </div>
+            <div class="footer-links">
+                <ul class="footer-lists">
+                    <li class="footer-horisontal">
+                        <a href="#" class="footer-link-item">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="footer-horisontal">
+                        <a href="#" class="footer-link-item">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="footer-horisontal">
+                        <a href="#" class="footer-link-item">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="footer-horisontal">
+                        <a href="#" class="footer-link-item">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.rateyo.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+
+
+</body>
+</html>

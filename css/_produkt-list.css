@@ -1,0 +1,106 @@
+.product-list {
+    padding-top: 120px;
+}
+
+.filter-title {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    padding-bottom: 28px;
+}
+
+.filter-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #a9bac6;
+    width: 94px;
+    height: 10px;
+    top: 16px;
+    left: 0px;
+}
+
+
+.filter-wrapper {
+    margin-right: 40px;
+}
+
+.category-list-item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 270px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.category-list-item:hover {
+    background-color: #eef1f4;
+}
+
+.category-link {
+    position: relative;
+}
+
+.filter-range-price {
+    padding-top: 78px;
+}
+
+.filter-range {
+    max-width: 270px;
+    padding-bottom: 78px;
+}
+
+.showcase__mark {
+    background: #eef1f4;
+}
+
+.recent-products {
+    padding-top: 78px;
+}
+
+.recent-products-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 260px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.content-subtitle {
+    padding-bottom: 10px;
+}
+
+.recent-product {
+    padding: 20px 0;
+}
+
+.recent-products-price {
+    padding-top: 10px;
+}
+
+.product-list-inner {
+    justify-content: space-between;
+    display: flex;
+}
+
+.pagination {
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+.pagination-btn-list {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #a9bac6;
+    color: #252645;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pagination-btn-list.active {
+    background-color: #4f6371;
+    color: #fff;
+}
+

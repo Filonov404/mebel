@@ -1,4 +1,6 @@
 @import "_product.css";
+@import "_produkt-list.css";
+@import "blog.css";
 *,
 *::before,
 *::after {
