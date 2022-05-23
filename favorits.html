@@ -11,12 +11,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Rubik:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -55,12 +56,12 @@
           <div class="user-container">
             <div class="user-heart">
               <a href="favorits.html" class="heart-link">
-                <span class="heart-count">0</span>
+                <span class="heart-count">3</span>
                 <img src="images/icons/heart.png" alt="" class="heart-img">
               </a>
             </div>
             <div class="user-cart">
-              <span class="cart-count">0</span>
+              <span class="cart-count">1</span>
               <a href="cart.html" class="cart-link">
                 <img src="images/icons/cart.png" alt="" class="cart-img">
               </a>
@@ -75,186 +76,174 @@
       </div>
     </div>
   </header>
-
   <main class="main">
     <div class="container">
-      <h2 class="title">О нас</h2>
+      <h2 class="title">Избранное</h2>
       <div class="breadcrumbs">
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a href="#" class="breadcrumbs-link">Главная /</a>
+            <a href="#" class="breadcrumbs-link">Главная / </a>
           </li>
           <li class="breadcrumbs-item">
-            <a href="#" class="breadcrumbs-link">О нас</a>
+            <a href="#" class="breadcrumbs-link">Избранное</a>
           </li>
         </ul>
       </div>
     </div>
   </main>
 
-  <section class="content">
+  <section class="favorits">
     <div class="container">
-      <div class="content-wrapper">
-        <img src="images/about/About_main.jpg" alt="About_main" class="main-content-img">
-        <div class="content-info">
-          <div class="content-main">
-            <p class="content-decor-text">12</p>
-            <span class="content-decor">Years Experience Working</span>
-          </div>
-          <div class="content-mission">
-            <h3 class="content-title">Mission of our creative house</h3>
-            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Ad cum ea esse id incidunt ipsum minima minus molestias, nisi officia unde vel vitae!
-              Ab ad alias aperiam architecto cumque
-              distinctio doloribus eos eum itaque necessitatibus nemo
-              officiis repellendus, sequi sit! </p>
-          </div>
+      <div class="favorites-wrapprer">
 
-          <div class="decor-border"></div>
-
-          <div class="content-bottom">
-            <div class="content-bottom-item">
-              <img src="images/icons/note.svg" alt="content" class="content-icon">
-              <div class="content-bottom-wrapper">
-                <p class="bottom-item">520+</p>
-                <span class="bottom-item-text">Project</span>
-              </div>
-            </div>
-            <div class="content-bottom-item">
-              <img src="images/icons/rupor.svg" alt="content" class="content-icon">
-              <div class="content-bottom-wrapper">
-                <p class="bottom-item">$4m</p>
-                <span class="bottom-item-text">Revenue</span>
-              </div>
-            </div>
-            <div class="content-bottom-item">
-              <img src="images/icons/medal.svg" alt="content" class="content-icon">
-              <div class="content-bottom-wrapper">
-                <p class="bottom-item">250</p>
-                <span class="bottom-item-text">Awards</span>
-              </div>
+        <div class="card-related-favorites">
+          <div class="card-img-favorites">
+            <img src="images/product/slider-1.jpg" alt="кресло" class="related-img">
+          </div>
+          <div class="favorites-card-content">
+            <p class="favorites-title-item">Деревянное кресло</p>
+            <div class="favorites-model-item">
+              <span class="favorites-descr">SKU: 011</span>
+              <span class="favorites-descr">Категория: Кресла</span>
+              <span class="favorites-descr">Теги: Модные</span>
             </div>
           </div>
+          <div class="favorites-bottom-box">
+            <button class="favorites-produkt-pay" type="submit">В корзину</button>
+            <p class="favorites-cart-price">15000 р</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="benefits">
-    <div class="container">
-      <div class="benefits-wrapper">
-        <div class="benefits-inner">
-          <img src="images/icons/monitor.svg" alt="monitor" class="benefits-img">
-          <p class="benefits-text">99%</p>
-          <span class="benefits-bottom-text">Satisfied Clients Rate</span>
+
+        <div class="card-related-favorites">
+          <div class="card-img-favorites">
+            <img src="images/product/1.jpg" alt="кресло" class="related-img">
+          </div>
+          <div class="favorites-card-content">
+            <p class="favorites-title-item">Настольная лампа модник</p>
+            <div class="favorites-model-item">
+              <span class="favorites-descr">SKU: 041</span>
+              <span class="favorites-descr">Категория: Настольная лампа</span>
+              <span class="favorites-descr">Теги: дизайнерские</span>
+            </div>
+          </div>
+          <div class="favorites-bottom-box">
+            <button class="favorites-produkt-pay" type="submit">В корзину</button>
+            <p class="favorites-cart-price">2000 р</p>
+          </div>
         </div>
-        <div class="benefits-inner">
-          <img src="images/icons/deliveli.svg" alt="deliveli" class="benefits-img">
-          <p class="benefits-text">5020+</p>
-          <span class="benefits-bottom-text">Products Delivered</span>
-        </div>
-        <div class="benefits-inner">
-          <img src="images/icons/phone24.svg" alt="phone24" class="benefits-img">
-          <p class="benefits-text">23hr</p>
-          <span class="benefits-bottom-text">Daily Working Time</span>
-        </div>
-        <div class="benefits-inner">
-          <img src="images/icons/best.svg" alt="best" class="benefits-img">
-          <p class="benefits-text">140+</p>
-          <span class="benefits-bottom-text">Brands in Store</span>
-        </div>
+        
       </div>
     </div>
   </section>
 
-  <section class="team">
+  <section class="products">
     <div class="container">
-      <div class="team-wrapper">
-
-        <div class="team-text-block">
-          <h5 class="team-title">Our Team</h5>
-          <p class="team-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea,
-            quibusdam, recusandae. Atque ipsa minus numquam quae sunt. Accusantium asperiores at aut
-            cum cumque delectus, dolor eos facilis in ipsum, labore necessitatibus numquam odio porro
-            quae quia, repellat repudiandae tempore tenetur voluptatibus. Accusamus accusantium, amet
-            cum cupiditate debitis dicta dolorum eaque, eius
-            fuga laboriosam mollitia nulla quibusdam repudiandae sequi, sint totam!</p>
-          <button class="team-btn">Join With US &#8594;</button>
+      <div class="related-products">
+        <div class="related-products-wrapper">
+          <h3 class="title-related">Просмотренные товары</h3>
+          <div class="arrows-slider">
+          </div>
         </div>
-
-        <div class="team-users-block">
-          <div class="team-user-item">
-            <img src="images/about/user1.jpg" alt="user" class="user-profile">
-            <div class="user-data">
-              <div class="user-content">
-                <h6 class="user-title">Eliza Elliot</h6>
-                <p class="user-description">Commodo tempor </p>
+        <div class="related-products-slider">
+          <div class="card-related1">
+            <div class="card-img">
+              <img src="images/product/slider-1.jpg" alt="кресло" class="related-img">
+            </div>
+            <div class="card-content">
+              <p class="title-card-item">Деревянное кресло</p>
+              <span class="price-card">15000 p.</span>
+            </div>
+            <div class="hidden-block-cart">
+              <div class="cart-bnt">
+                <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
               </div>
-              <div class="user-social-wrapper">
-                <div class="user-social">
-                  <div class="user-link1">
-                    <img src="images/icons/instagram.svg" alt="instagram" class="user-social-icon">
-                  </div>
-                  <div class="user-link2">
-                    <img src="images/icons/google.svg" alt="google" class="user-social-icon">
-                  </div>
-                </div>
+              <div class="heart-bnt">
+                <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
               </div>
             </div>
           </div>
-          <div class="team-user-item">
-            <img src="images/about/user2.jpg" alt="user" class="user-profile">
-            <div class="user-data">
-              <div class="user-content">
-                <h6 class="user-title">Roscoe A. </h6>
-                <p class="user-description">Commodo tempor </p>
+          <div class="card-related1">
+            <div class="card-img">
+              <img src="images/product/slider-2.jpg" alt="кресло" class="related-img">
+            </div>
+            <div class="card-content">
+              <p class="title-card-item">Деревянное кресло</p>
+              <span class="price-card">15000 p.</span>
+            </div>
+            <div class="hidden-block-cart">
+              <div class="cart-bnt">
+                <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
               </div>
-              <div class="user-social-wrapper">
-                <div class="user-social">
-                  <div class="user-link1">
-                    <img src="images/icons/instagram.svg" alt="instagram" class="user-social-icon">
-                  </div>
-                  <div class="user-link2">
-                    <img src="images/icons/google.svg" alt="google" class="user-social-icon">
-                  </div>
-                </div>
+              <div class="heart-bnt">
+                <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
               </div>
             </div>
           </div>
-          <div class="team-user-item">
-            <img src="images/about/user3.jpg" alt="user" class="user-profile">
-            <div class="user-data">
-              <div class="user-content">
-                <h6 class="user-title">Ruby M. </h6>
-                <p class="user-description">Commodo tempor </p>
+          <div class="card-related1">
+            <div class="card-img">
+              <img src="images/product/slider-3.jpg" alt="кресло" class="related-img">
+            </div>
+            <div class="card-content">
+              <p class="title-card-item">Деревянное кресло</p>
+              <span class="price-card">15000 p.</span>
+            </div>
+            <div class="hidden-block-cart">
+              <div class="cart-bnt">
+                <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
               </div>
-              <div class="user-social-wrapper">
-                <div class="user-social">
-                  <div class="user-link1">
-                    <img src="images/icons/instagram.svg" alt="instagram" class="user-social-icon">
-                  </div>
-                  <div class="user-link2">
-                    <img src="images/icons/google.svg" alt="google" class="user-social-icon">
-                  </div>
-                </div>
+              <div class="heart-bnt">
+                <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
               </div>
             </div>
           </div>
-          <div class="team-user-item">
-            <img src="images/about/user4.jpg" alt="user" class="user-profile">
-            <div class="user-data">
-              <div class="user-content">
-                <h6 class="user-title">Marie F. Bloss</h6>
-                <p class="user-description">Commodo tempor </p>
+          <div class="card-related1">
+            <div class="card-img">
+              <img src="images/product/slider-4.jpg" alt="кресло" class="related-img">
+            </div>
+            <div class="card-content">
+              <p class="title-card-item">Деревянное кресло</p>
+              <span class="price-card">15000 p.</span>
+            </div>
+            <div class="hidden-block-cart">
+              <div class="cart-bnt">
+                <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
               </div>
-              <div class="user-social-wrapper">
-                <div class="user-social">
-                  <div class="user-link1">
-                    <img src="images/icons/instagram.svg" alt="instagram" class="user-social-icon">
-                  </div>
-                  <div class="user-link2">
-                    <img src="images/icons/google.svg" alt="google" class="user-social-icon">
-                  </div>
-                </div>
+              <div class="heart-bnt">
+                <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+              </div>
+            </div>
+          </div>
+          <div class="card-related1">
+            <div class="card-img">
+              <img src="images/product/slider-2.jpg" alt="кресло" class="related-img">
+            </div>
+            <div class="card-content">
+              <p class="title-card-item">Деревянное кресло</p>
+              <span class="price-card">15000 p.</span>
+            </div>
+            <div class="hidden-block-cart">
+              <div class="cart-bnt">
+                <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+              </div>
+              <div class="heart-bnt">
+                <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
+              </div>
+            </div>
+          </div>
+          <div class="card-related1">
+            <div class="card-img">
+              <img src="images/product/slider-1.jpg" alt="кресло" class="related-img">
+            </div>
+            <div class="card-content">
+              <p class="title-card-item">Деревянное кресло</p>
+              <span class="price-card">15000 p.</span>
+            </div>
+            <div class="hidden-block-cart">
+              <div class="cart-bnt">
+                <img src="images/icons/cart.png" alt="cart" class="cart-bnt-icon">
+              </div>
+              <div class="heart-bnt">
+                <img src="images/icons/heart.png" alt="search" class="heart-bnt-icon">
               </div>
             </div>
           </div>
@@ -444,10 +433,8 @@
             </li>
           </ul>
           <form class="form-item" action="#">
-            <label>
-              <input class="footer-input" placeholder="Ваш емайл" name="input" type="text">
-              <input class="footer-btn" type="submit" name="button" value="Подписаться">
-            </label>
+            <input class="footer-input" placeholder="Ваш емайл" name="input" type="text">
+            <input class="footer-btn" type="submit" name="button" value="Подписаться">
           </form>
         </div>
       </div>
@@ -486,6 +473,10 @@
   </footer>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/slick.min.js"></script>
+
+
 </body>
 
 </html>

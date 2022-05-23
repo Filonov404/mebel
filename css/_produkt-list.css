@@ -1,5 +1,5 @@
 .product-list {
-    padding-top: 120px;
+    padding-top: 60px;
 }
 
 .filter-title {
@@ -104,3 +104,47 @@
     color: #fff;
 }
 
+.card-related-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 350px;
+    box-shadow: 0px 6px 57px 0px rgba(42, 42, 42, 0.05);
+}
+
+.card-related-list:hover .hidden-block-cart {
+    opacity: 1;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 20px;
+}
+
+.related-img-list {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.hidden-block-cart {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    left: 29%;
+    bottom: 30%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    padding: 15px;
+    background-color: #c6ced4;
+    border-radius: 10px;
+}
+
+.card-descr {
+    margin-bottom: 25px;
+}
